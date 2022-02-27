@@ -1,15 +1,322 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Serif+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Redressed', cursive;
+    font-family: 'Noto Serif TC', serif;
 }
+
 nav{
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid #6f6f6f;
+    border-bottom: 2px solid #ffffff;
+    background-color:crimson;
+    font-family: 'Noto Serif TC', serif;
+}
+nav h1{
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url('images/yannisssoleil.jpg');
+    background-size: cover;
+    opacity: 0.9;
+    color: #fff;
+    padding: 40px;
+}
+header h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 90px;
+    color:rgb(255, 255, 255);
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-family: 'Noto Serif TC', serif;
+}
+header button{
+    display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 20px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    cursor: pointer;
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 20px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    cursor: pointer;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+}
+.main{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+}
+.main .content .about{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main .content .about .left{
+   flex: 0 0 30%;
+   padding: 20px;
+   background-color:black;
+   color:#fff;
+}
+.main .content .about .left button{
+    padding: 20px 40px;
+    background-color: #fff;
+    color:#000;
+    border:none;
+    margin-bottom: 30px;
+    outline:none;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+ }
+.main .content .about .right img{
+    height: 531px;
+    width: 474px;
+    margin-top: 5px;
+}
+
+
+.main1 .content1 .comp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px 100px;
+}
+.main1 .content1 .competences-top{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.main1 .content1 .competences-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: -30px;
+}
+.main1 .content1 .competences-bottom .competences-item {
+	flex-basis: 80%;
+    max-width: 300px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 10px;
+	background-image: url(images/yannisssoleil.jpg);
+	background-size: cover;
+	margin: 5px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.main1 .content1 .competences-bottom .competences-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.6;
+	z-index: -1;
+}
+.main1 .content1 .competences-bottom .competences-item .icon img{
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+.main1 .content1 .competences-item h2 {
+	font-size: 1.5rem;
+	color: white;
+	margin-bottom: 10px;
+	text-align: start;
+	text-transform: uppercase;
+}
+.main1 .content1 .competences-item p {
+	color: white;
+	text-align: left;
+    max-width: 300px;
+}
+
+
+/*.main2 .content2{
+    display: flex;
+    justify-content: center;
+	flex-direction: column;
+    align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+.main2 .content2 .portfolio-top h1 {
+	margin-bottom: 50px;
+    align-items: center;
+}
+.main2 .content2 .portfolio-bottom {
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.main2 .content2 .portfolio-bottom .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.main2 .content2 .portfolio-bottom .project-item .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+.main2 .content2 .portfolio-bottom .project-item .project-info h1 {
+	color: white;
+	font-size: 4rem;
+	font-weight: 500;
+}
+.main2 .content2 .portfolio-bottom .project-item .project-info h2 , a{
+	color: white;
+	font-size: 2.3rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+.main2 .content2 .portfolio-bottom .project-item .project-info p {
+	color: white;
+}
+.main2 .content2 .portfolio-bottom .project-item .project-img img{
+	height: 531px;
+    width: 474px;
+    margin-top: 5px;
+    flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.main2 .content2 .portfolio-bottom .project-item .project-img:after {
+	content: '';
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}*/
+.main2 .ytb{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;  
+	justify-content: center;
+    padding: 30px;
+    margin-top: 2px;
+}
+
+footer{
+	margin-top: 40px;
+	background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+}
+@media screen and (max-width:680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .about {
+		height:200px;
+        margin: 10px;
+		display: block;
+    }
+    .main .content .about .right img{
+        height:200px;
+        width: 100%;
+        margin-top: -0px;
+    }
+    .main .content .about{
+        display: block;
+    }
+    .main1s{
+        padding: 30px;
+    }
+    footer{
+        padding: 30px;
+    }
 }
