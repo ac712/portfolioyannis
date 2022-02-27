@@ -306,15 +306,19 @@ footer #contact{
 		display: block;
     }
     .main .content .about .right img{
-        height:200px;
+        height:600px;
         width: 100%;
         margin-top: -0px;
+		margin-bottom: auto;
     }
     .main .content .about{
+		height:200px;
+        margin: 10px;
         display: block;
     }
-    .main1s{
-        padding: 30px;
+    .main1 .comp {
+        margin: 10px;
+		display: block;
     }
     footer{
         padding: 30px;
