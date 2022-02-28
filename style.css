@@ -241,7 +241,7 @@ header button{
    flex: 0 0 50%;
    padding: 10px;
    color:rgb(255, 255, 255);
-   background-color: #000;
+   background-color: rgb(0, 0, 0);
 }
 .main2 .content2 .portfolio .right{
    flex: 0 0 50%;
@@ -256,90 +256,6 @@ header button{
 	overflow: hidden;
 	position: relative;
 }
-.main2 .content2 .portfolio .right:after {
-	content: '';
-	position: relative;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
-}
-/*.main2 .content2{
-    display: flex;
-    justify-content: center;
-	flex-direction: column;
-    align-items: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 5px 0;
-}
-.main2 .content2 .portfolio-top h1 {
-	margin-bottom: 50px;
-    align-items: center;
-}
-.main2 .content2 .portfolio-bottom {
-	display: flex;
-    flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-.main2 .content2 .portfolio-bottom .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-.main2 .content2 .portfolio-bottom .project-item .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-.main2 .content2 .portfolio-bottom .project-item .project-info h1 {
-	color: white;
-	font-size: 4rem;
-	font-weight: 500;
-}
-.main2 .content2 .portfolio-bottom .project-item .project-info h2 , a{
-	color: white;
-	font-size: 2.3rem;
-	font-weight: 500;
-	margin-top: 10px;
-}
-.main2 .content2 .portfolio-bottom .project-item .project-info p {
-	color: white;
-}
-.main2 .content2 .portfolio-bottom .project-item .project-img img{
-	height: 531px;
-    width: 474px;
-    margin-top: 5px;
-    flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-}
-.main2 .content2 .portfolio-bottom .project-item .project-img:after {
-	content: '';
-	position: relative;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
-}*/
 .main2 .content2 .portfolio2{
     margin-top: 40px;
     display: flex;
@@ -372,13 +288,7 @@ footer #contact{
         margin-left: 10px;
         margin-bottom: 20px;
     }
-    .main .about {
-		height:200px;
-        margin: 10px;
-		width: 90%;
-		display: block;
-    }
-	.main .about .right .img::after {
+	.main .content .about .right .img::after {
 		left: -45px;
 		top: 34px;
 		height: 98%;
@@ -389,11 +299,6 @@ footer #contact{
         width: 100%;
         margin-top: -0px;
     }
-    .main .content .about{
-		height:200px;
-        margin: 10px;
-        display: block;
-    }
 	.main1 .content1 .comp {
         margin: 10px;
 		flex-basis: 45%;
@@ -403,6 +308,11 @@ footer #contact{
         margin: 10px;
 		flex-basis: 45%;
 		margin: 2.5%;
+    }
+	.main2 .content2 .portfolio .right img{
+        height:300px;
+        width:480px;
+        margin-top: -0px;
     }
     footer{
         padding: 30px;
