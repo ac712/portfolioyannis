@@ -127,21 +127,33 @@ header button{
     font-family: 'Dancing Script', cursive;
     cursor: pointer;
  }
+ .main .content .about .right{
+	flex: 0 0 30%;
+	padding: 20px;
+	background-color:black;
+ }
 .main .content .about .right img{
     height: 531px;
     width: 474px;
     margin-top: 5px;
 }
 
-
+.main1{
+    margin-top: 20px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+}
 .main1 .content1 .comp{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
 	flex-direction: column;
 	text-align: center;
 	max-width: 600px;
 	margin: 0 auto;
+	margin-top: 100x;
 	padding: 30px 100px;
 }
 .main1 .content1 .competences-top{
@@ -152,9 +164,8 @@ header button{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: row;
 	flex-wrap: wrap;
-	margin-top: -30px;
+	margin-top: 50px;
 }
 .main1 .content1 .competences-bottom .competences-item {
 	flex-basis: 80%;
@@ -201,7 +212,59 @@ header button{
     max-width: 300px;
 }
 
-
+.main2{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+}
+.main2 .content2 .portfolio1{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.main2 .content2 .portfolio{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main2 .content2 .portfolio h1{
+	margin-bottom: 50px;
+    align-items: center;
+}
+.main2 .content2 .portfolio .left{
+   flex: 0 0 30%;
+   padding: 10px;
+   color:rgb(255, 255, 255);
+   background-color: #000;
+}
+.main2 .content2 .portfolio .right{
+   flex: 0 0 40%;
+   padding: 10px;
+}
+.main2 .content2 .portfolio .right img{
+	height: 400px;
+    width: 600px;
+    margin-top: 5px;
+    flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.main2 .content2 .portfolio .right:after {
+	content: '';
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}
 /*.main2 .content2{
     display: flex;
     justify-content: center;
@@ -276,6 +339,13 @@ header button{
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.7;
 }*/
+.main2 .content2 .portfolio2{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0px;
+}
 .main2 .ytb{
     display: flex;
 	flex-direction: row;
@@ -297,28 +367,40 @@ footer #contact{
 }
 @media screen and (max-width:680px){
     nav .onglets {
-        margin-left: 0px;
+        margin-left: 10px;
         margin-bottom: 20px;
     }
     .main .about {
 		height:200px;
         margin: 10px;
+		width: 90%;
 		display: block;
     }
+	.main .about .right .img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+	}
     .main .content .about .right img{
-        height:600px;
+        height:650px;
         width: 100%;
         margin-top: -0px;
-		margin-bottom: auto;
     }
     .main .content .about{
 		height:200px;
         margin: 10px;
         display: block;
     }
-    .main1 .comp {
+	.main1 .content1 .comp {
         margin: 10px;
-		display: block;
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+    .main1 .content1 .competences-bottom {
+        margin: 10px;
+		flex-basis: 45%;
+		margin: 2.5%;
     }
     footer{
         padding: 30px;
