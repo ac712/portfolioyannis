@@ -243,11 +243,10 @@ header h4{
    padding: 10px;
 }
 .main2 .content2 .portfolio .right img{
-	height: 800px;
-    width: 786px;
+	height: 400px;
+    width: 393px;
     margin-top: 5px;
     flex-basis: 50%;
-	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
