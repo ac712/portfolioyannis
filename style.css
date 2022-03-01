@@ -8,8 +8,8 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Serif TC', serif;
-	color: #fff;
-	background-color:rgb(0, 0, 0);
+	color: rgb(239, 239, 241);
+    background-color:rgb(14, 14, 16);
 }
 
 nav{
@@ -18,12 +18,12 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #ffffff;
-    background-color:rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(239, 239, 241);
+    background-color:rgb(14, 14, 16);
     font-family: 'Noto Serif TC', serif;
 }
 nav h1{
-    color: #ffffff;
+    color: rgb(239, 239, 241);
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
 }
@@ -33,9 +33,9 @@ nav .onglets{
 }
 nav .onglets a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(239, 239, 241);
     margin-right: 10px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(239, 239, 241);
     padding-bottom: 1px;
     font-size: 15px;
 }
@@ -48,43 +48,27 @@ header{
     background: url('images/yannisssoleil.jpg');
     background-size: cover;
     opacity: 0.9;
-    color: #fff;
+    color: white;
     padding: 40px;
 }
 header h1{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 80px;
-    color:rgb(255, 255, 255);
+    color:white;
 }
 header h4{
     margin-top: -20px;
     font-size: 20px;
     text-align: center;
-    border-bottom: 1px solid #fff;
     font-family: 'Noto Serif TC', serif;
 }
-header button{
-    display: inline-block;
-	padding: 10px 30px;
-	color: white;
-	background-color: transparent;
-	border: 2px solid crimson;
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	margin-top: 20px;
-	transition: 0.3s ease;
-	transition-property: background-color, color;
-    cursor: pointer;
-}
-
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid crimson;
+	border: 2px solid rgb(220, 95, 0);
 	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -95,14 +79,14 @@ header button{
 }
 .cta:hover {
 	color: white;
-	background-color: crimson;
+	background-color: rgb(220, 95, 0);
 }
 .main{
-    margin-top: 2px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(14, 14, 16);
 }
 .main .content .about{
     margin-top: 40px;
@@ -113,7 +97,7 @@ header button{
 .main .content .about .left{
    flex: 0 0 30%;
    padding: 20px;
-   color:#fff;
+   color:rgb(239, 239, 241);
 }
  .main .content .about.right{
 	flex: 0 0 70%;
@@ -129,7 +113,7 @@ header button{
     display: block;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(14, 14, 16);
 }
 .main1 .content1 .comp{
     display: block;
@@ -203,7 +187,7 @@ header button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(14, 14, 16);
 }
 .main2 .content2 .portfolio{
     display: block;
@@ -230,7 +214,7 @@ header button{
    flex: 0 0 70%;
    padding: 10px;
    color:rgb(255, 255, 255);
-   background-color: rgb(0, 0, 0);
+   background-color:rgb(14, 14, 16);
 }
 .main2 .content2 .portfolio .right{
    flex: 0 0 70%;
@@ -448,12 +432,12 @@ iframe{
 
 
 
-
 footer{
 	margin-top: 40px;
-	background-color: rgb(0, 0, 0);
+	background-color:rgb(14, 14, 16);
     color: #fff;
     padding: 30px 100px;;
+	font-size: 18px;
 }
 footer #contact{
     color: rgb(181, 181, 181);
@@ -465,7 +449,7 @@ footer #contact{
     }
     .main .content .about .right img{
         height:390px;
-        width: 310px;
+        width: 330px;
         margin-top: -0px;
 		margin: 10px;
     }
