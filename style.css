@@ -243,8 +243,8 @@ header h4{
    padding: 10px;
 }
 .main2 .content2 .portfolio .right img{
-	height: 400px;
-    width: 600px;
+	height: 800px;
+    width: 786px;
     margin-top: 5px;
     flex-basis: 50%;
 	height: 300px;
@@ -493,8 +493,8 @@ footer #contact{
     }
 
 	.main2 .content2 .portfolio .right img{
-        height:267px;
-        width:262px;
+        height:297px;
+        width:290px;
         margin-top: -0px;
     }
     footer{
