@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Serif+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -451,6 +452,7 @@ footer{
     color: #fff;
     padding: 30px 100px;;
 	font-size: 18px;
+	font-family: 'Indie Flower', cursive;
 }
 footer #contact{
     color: rgb(181, 181, 181);
