@@ -110,8 +110,8 @@ header h4{
 	flex: 0 0 70%;
  }
 .main .content .about .right img{
-    height: 531px;
-    width: 474px;
+    height: 504px;
+    width: 568px;
     margin-top: 5px;
 }
 
@@ -469,8 +469,8 @@ footer #contact{
         margin-bottom: 20px;
     }
     .main .content .about .right img{
-        height:390px;
-        width: 330px;
+        height:336px;
+        width: 379px;
         margin-top: -0px;
 		margin: 10px;
     }
