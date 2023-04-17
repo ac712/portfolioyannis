@@ -444,8 +444,11 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-medium);
 }
 
-@media(max-width: 500px) {
+@media(max-width: 680px) {
     .header {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         text-align: center;
     }
 
@@ -521,6 +524,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-top: 0px;
 	width: 80%;
 	position: relative;
+    margin-bottom: var(--gutter-normal);
 }
 .ytb::after{
 	content: "";
