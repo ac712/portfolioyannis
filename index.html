@@ -1,145 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
   <title>Portfolio Yannis</title>
-  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <nav>
-        <h1>Portfolio Yannis</h1>
-        <div class="onglets">
-            <a href="#moi">À PROPOS DE MOI</a>
-            <a href="#compétences">COMPÉTENCES</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact">CONTACT</a>
-        </div>
-    </nav>
 
-    <header>
-        <h1>Bienvenue</h1>
-        <h4>DANS MON WEBSITE PORTFOLIO</h4>
-        <a href="#moi" target="_self" class="cta">PARCOURIR</a>
-    </header>
+  <!-- ***** Header ***** -->
 
-    <section class="main" id="moi">
-        <div class="content">
-            <div class="about">
-                <div class="left">
-                    <h1>À PROPOS DE MOI</h1>
-                    <p>Titulaire d'une Licence MIASHS, et étudiant en Master 1 MIAGE à l'Université Côte d'Azur je suis passioné d'informatique, de jeux vidéos & de cuisine.</p>
-                    <p>Vous trouverez ici mes travaux réalisés dans le cadre de mes études ainsi que mes travaux personnels. Pour plus d'informations, vous pouvez me contacter via la section contact qui se trouve en bas de la page. Vous pouvez également télécharger mon CV juste en dessous.</p></br>
-                    <a href="images/cv.pdf" target="_blank" class="cta">MON CV</a>
-                </div>
-                <div class="right">
-                    <img src="images/IDphoto.png" alt="">
-                </div>
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#Compétences" class="nav__link">Compétences</a></li>
+          <li class="nav__item"><a href="#Portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Yannis BAILI</span>
+        </h1>
+        <p>Bienvenue dans mon Website Portfolio</p>
+        <a href="#about" target="_self" class="cta">Parcourir</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+                <p>Titulaire d'une Licence MIASHS, et étudiant en Master 1 MIAGE à l'Université Côte d'Azur je suis passioné d'informatique, de jeux vidéos & de cuisine.</p>
+                <p>Vous trouverez ici mes travaux réalisés dans le cadre de mes études ainsi que mes travaux personnels. Pour plus d'informations, vous pouvez me contacter via la section contact qui se trouve en bas de la page. Vous pouvez également télécharger mon CV juste en dessous.</p></br>
+                <a href="images/cv.pdf" target="_blank" class="cta">Mon CV</a>
             </div>
-        </div>
-    </section>
-
-    <section class="main1" id="compétences">
-        <div class="content1">
-            <div class="comp">
-                <h1 class="section-title">COMPÉTENCES</h1>
-                <p>Ces dernières sont en constante évolution car j'apprends tous les jours de nouvelles choses.</p>
+  
+            <div class="about__photo-container">
+              <img class="about__photo" src="./images/IDphoto.png" alt="" />
             </div>
-            <div class="competences-bottom">
-                <div class="competences-item">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Compétences ***** -->
+
+    <section class="competence" id="Compétences">
+        <div class="row">
+          <h2>Compétences</h2>
+          <div class="competence__logos">
+            <div class="competences-item">
+                <div class="icon">
+                    <img src="/images/lp.png" alt="">
+                </div>
+                <h2>Langages de programmation</h2>
+                <p>C - C++ - Python - PHP</p>
+              </div>
+              <div class="competences-item">
                   <div class="icon">
-                      <img src="/images/lp.png" alt="">
+                      <img src="/images/bdd.png" alt="">
                   </div>
-                  <h2>Langages de programmation</h2>
-                  <p>C - C++ - Python - PHP</p>
+                  <h2>Base de données</h2>
+                  <p>SQL - MySQL - ORACLE</p>
+              </div>
+              <div class="competences-item">
+                  <div class="icon">
+                      <img src="/images/dw.png" alt="">
+                  </div>
+                  <h2>Développement web</h2>
+                  <p>HTML - CSS - JavaScript</p>
+              </div>
+              <div class="competences-item">
+                  <div class="icon">
+                      <img src="/images/autres.png" alt="">
+                  </div>
+                  <h2>Autres outils</h2>
+                  <p>- Méthodes de conception des projets (Vensim - UML) </br> - Montage vidéo - GitHub </br> - Gestion de projet </p>
+          </div>
+        </div>
+      </section>
+      
+    <!-- ***** Portfolio ***** -->
+
+    <section class="Portfolio" id="Portfolio">
+      <div class="row">
+        <h2>Portfolio</h2>
+        <div class="Portfolio__boxes">
+
+          <div class="Portfolio__box">
+            <div class="Portfolio__text">
+              <h3>*Mon Portfolio</h3>
+              <p>
+                Site sur lequel vous vous trouvez actuellement. Un site statique responsive.
+              </p>
+              <ul class="Portfolio__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="Portfolio__image-box">
+              <img src="./images/rendu.png" class="Portfolio__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="Portfolio__box">
+            <div class="Portfolio__text">
+              <h3>*Responsable informatique</h3>
+              <p>
+                Cette fonction m’a permis de développer mon sens de l’initiative tout en apprenant à travailler en collaboration au sein d'une association. Cela m'a également permis d'être polyvalent et de m'adapter aisément face aux différentes situations.
+              </p>
+              <ul class="Portfolio__list">
+                <p><b>Quelques tâches qui me sont confiées :</b></p>
+                <li>Création de logos</li>
+                <li>Création d'affiches</li>
+                <li>Aide sur toute la partie bureautique (Pack Office)</li>
+              </ul>
+            </div>
+              <div class="Portfolio__image-box">
+                <img src="./images/carte.png" class="Portfolio__image" alt="Project 1" />
+              </div>
+          </div>
+
+            <div class="Portfolio__box">
+                <div class="Portfolio__text">
+                  <h3>*Jeu Vidéo</h3>
+                  <p>
+                    Conception d'un jeu vidéo 
+                  </p>
+                  <ul class="Portfolio__list">
+                    <li>BabylonJS</li>
+                  </ul>
                 </div>
-                <div class="competences-item">
-                    <div class="icon">
-                        <img src="/images/bdd.png" alt="">
-                    </div>
-                    <h2>Base de données</h2>
-                    <p>SQL - MySQL - ORACLE</p>
-                </div>
-                <div class="competences-item">
-                    <div class="icon">
-                        <img src="/images/dw.png" alt="">
-                    </div>
-                    <h2>Développement web</h2>
-                    <p>HTML - CSS</p>
-                </div>
-                <div class="competences-item">
-                    <div class="icon">
-                        <img src="/images/autres.png" alt="">
-                    </div>
-                    <h2>Autres outils</h2>
-                    <p>- Méthodes de conception des projets (Vensim - UML) </br> - Montage vidéo - GitHub</p>
+                <div class="Portfolio__image-box">
+                  <img src="./images/wip.jpeg" class="Portfolio__image" alt="Project 1" />
                 </div>
             </div>
+            
+            <div class="Portfolio__box">
+              <div class="Portfolio__text">
+                <h3>*Flammes froide</h3>
+                <p>
+                  Les flammes dites froides se stabilisent autour de 500 °C, contre plus de 3 000 °C pour les feux classiques. C’est un phénomène créé par une oxydation lente et non par une combustion. 
+                </p>
+              </div>
+              <div class="ytb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N4KrjiiR4PQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="Portfolio__box">
+              <div class="Portfolio__text">
+                <h3>*Fluide non Newtonien</h3>
+                <p>
+                  Dans les fluides non newtoniens, la viscosité peut changer lorsqu'elle est soumise à une force pour devenir plus liquide ou plus solide.
+                </p>
+              </div>
+              <div class="ytb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KH7xfQ7ftsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="Portfolio__box">
+              <div class="Portfolio__text">
+                <h3>*Force de pression</h3>
+                <p>
+                  Au lieu de tomber d'un bloc, lorsque l'eau coule, des bulles d'air peuvent se créer dans le liquide, et cet appel d'air permet à l'eau de tomber du verre lorsque la feuille n'est plus là... Avec la feuille, on empêche la création de bulles dans le liquide, et donc, pour tomber, l'eau a à vaincre une force de pression qui est égale à une centaine de fois son poids...                </p>
+              </div>
+              <div class="ytb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9Bz0iCP1g-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="Portfolio__box">
+              <div class="Portfolio__text">
+                <h3>*Polymères</h3>
+                <p>
+                  Les sacs de congélations sont faits d'un plastique composé de molécules longues nommées polymères. Ces polymères peuvent s'étirer et se déformer considérablement avant de se briser, ce qui donne une grande élasticité.
+                </p>
+              </div>
+              <div class="ytb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kco7VD-MAHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              </div>
+            </div>
+
+            <div class="Portfolio__box">
+              <div class="Portfolio__text">
+                <h3>*Acétone + Polystyrène</h3>
+                <p>
+                  Quand le polystyrène est au contact de l'acétone, les fibres de polymère se dissolvent et libèrent l'air.
+                </p>
+              </div>
+              <div class="ytb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Gg7dqh6cvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="Portfolio__box">
+              <div class="Portfolio__text">
+                <h3>*Couture</h3>
+                <p>
+                  Je suis effectivement très polyvalent ^^  
+                </p>
+              </div>
+              <div class="ytb">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/avUj4QrGkUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
         </div>
+      </div>
     </section>
 
-    <section class="main2" id="portfolio">
-        <div class="content2">
-            <div class="portfolio1">
-                <h4>MON PORTFOLIO</h4>
-            </div>
-            <div class="portfolio">
-                <div class="left">
-                    <h1>*Responsable informatique*</h1>
-                    <p>Cette fonction m’a permis de développer mon sens de l’initiative tout en apprenant à travailler en collaboration au sein d'une association. Cela m'a également permis d'être polyvalent et de m'adapter aisément face aux différentes situations.</p>
-                </div>
-                <div class="right">
-                    <h2>Quelques tâches que je suis amené à faire :</h2>
-                    <p>- Création de logos</p>
-                    <p>- Création d'affiches</p>
-                    <p>- Aide sur toute la partie bureautique (Pack Office)</p>
-                </div>
-                <div class="left">
-                    <h1>*Portfolio*</h1>
-                    <h2>Création de ce site web</h2>
-                    <p>Site sur lequel vous êtes actuellement. Un site statique responsive réalisé avec : HTML - CSS.</p>
-                </div>
-                <div class="right">
-                    <img src="/images/rendu.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="portfolio2">
-            <h1>*Mes vidéos & montages*</h1>
-        </div>
-        <div class="ytb">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/N4KrjiiR4PQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </br>
-        </div>
-        <div class="ytb1">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KH7xfQ7ftsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </br>
-        </div>
-        <div class="ytb2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9Bz0iCP1g-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </br>
-        </div>
-        <div class="ytb3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kco7VD-MAHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </br>
-        </div>
-        <div class="ytb4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Gg7dqh6cvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </br>
-        </div>
-        <div class="ytb5">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/avUj4QrGkUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </br>
-        </div>
-        <div class="ytb6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/K9--ZFNPO9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+  <!-- ***** Contact ***** -->
 
-    <footer>
-        <p id="contact">Contact : ya2nis.baili@gmail.com - 07 81 88 48 77 | 03000 Moulins, FRANCE | &copy; 2022, Portfolio Yannis.</p>
-    </footer>
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Restons en contact</h2>
+      <div class="contact__info">
+        <!-- <p> </p> -->
+        <a href="ya2nis.baili@gmail.com" class="btn">ya2nis.baili@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-itemi">
+          <a href="https://www.instagram.com/yannis.bli/?igshid=YmMyMTA2M2Y%3D" title="Link to Instagram Profile">
+            <img src="./images/instagram.svg" class="footer__social-image" alt="Instagram">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/yannis-baili-692282246">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+      <p>
+        &copy; 2023 - Portfolio Yannis
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
 
 </html>
